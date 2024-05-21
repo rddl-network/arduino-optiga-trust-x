@@ -610,7 +610,7 @@ int32_t IFX_OPTIGA_TrustX::sha256(uint8_t dataToHash[], uint16_t ilen, uint8_t o
 
 int32_t IFX_OPTIGA_TrustX::calculateSignature(uint8_t dataToSign[], uint16_t ilen, uint16_t ctx, uint8_t* out, uint16_t& olen)
 {
-    uint16_t ret = (int32_t)INT_LIB_ERROR;
+    uint32_t ret = (int32_t)INT_LIB_ERROR;
     sCalcSignOptions_d calsign_opt;
     sbBlob_d sign_blob;
 #define MAX_SIGN_LEN    80
